@@ -1,7 +1,7 @@
 "use client";
 
 import { Hero as HeroType } from "@/types";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,25 +9,53 @@ import { Button } from "@/components/ui/button";
 import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
 import { TypewriterEffect } from "@/components/ui/TypewriterEffect";
 import { ChevronDown } from "lucide-react";
+import { MouseEvent } from "react";
 
 interface HeroProps {
     data: HeroType;
 }
 
 export function Hero({ data }: HeroProps) {
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
+
+    // Smooth out the mouse movement
+    const mouseX = useSpring(x, { stiffness: 150, damping: 15 });
+    const mouseY = useSpring(y, { stiffness: 150, damping: 15 });
+
+    // Calculate rotation based on mouse position
+    // Rotate X depends on Y axis (tilting up/down)
+    // Rotate Y depends on X axis (tilting left/right)
+    const rotateX = useTransform(mouseY, [-0.5, 0.5], ["15deg", "-15deg"]);
+    const rotateY = useTransform(mouseX, [-0.5, 0.5], ["-15deg", "15deg"]);
+
+    const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+
+        // Calculate mouse position relative to the center of the element
+        // Range: -0.5 to 0.5
+        const width = rect.width;
+        const height = rect.height;
+
+        const mouseXFromCenter = e.clientX - rect.left - width / 2;
+        const mouseYFromCenter = e.clientY - rect.top - height / 2;
+
+        x.set(mouseXFromCenter / width);
+        y.set(mouseYFromCenter / height);
+    };
+
+    const handleMouseLeave = () => {
+        x.set(0);
+        y.set(0);
+    };
+
     return (
         <section id="about" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
             <BackgroundBeams />
             <div className="container mx-auto px-6 relative z-10">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                     <div className="flex flex-col items-start max-w-3xl">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <h2 className="text-primary font-medium text-lg mb-4">Hi, my name is</h2>
-                        </motion.div>
+
 
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}
@@ -35,7 +63,7 @@ export function Hero({ data }: HeroProps) {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className="text-5xl md:text-7xl font-bold tracking-tight mb-4"
                         >
-                            {data.name}.
+                            {data.name}
                         </motion.h1>
 
                         <motion.div
@@ -114,23 +142,43 @@ export function Hero({ data }: HeroProps) {
                     </div>
 
                     {data.image && (
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                            className="relative w-64 h-64 md:w-80 md:h-80 shrink-0 group"
-                        >
-                            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500" />
-                            <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-background shadow-2xl group-hover:scale-105 transition-transform duration-500">
-                                <Image
-                                    src={data.image}
-                                    alt={data.name}
-                                    fill
-                                    className="object-cover"
-                                    priority
+                        <div className="relative [perspective:1000px]">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.5 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.5, delay: 0.2 }}
+                                style={{
+                                    rotateX,
+                                    rotateY,
+                                    transformStyle: "preserve-3d"
+                                }}
+                                onMouseMove={handleMouseMove}
+                                onMouseLeave={handleMouseLeave}
+                                className="relative w-64 h-64 md:w-80 md:h-80 shrink-0 group cursor-pointer"
+                            >
+                                <div
+                                    className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-500 -z-10"
+                                    style={{ transform: "translateZ(-20px)" }}
                                 />
-                            </div>
-                        </motion.div>
+                                <div
+                                    className="relative w-full h-full rounded-2xl overflow-hidden border-4 border-background shadow-2xl transition-all duration-500"
+                                    style={{ transform: "translateZ(20px)" }}
+                                >
+                                    <Image
+                                        src={data.image}
+                                        alt={data.name}
+                                        fill
+                                        className="object-cover"
+                                        priority
+                                    />
+                                </div>
+                                {/* Decorative elements for 3D feel */}
+                                <div
+                                    className="absolute -inset-4 border-2 border-primary/20 rounded-3xl -z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                    style={{ transform: "translateZ(-40px)" }}
+                                />
+                            </motion.div>
+                        </div>
                     )}
                 </div>
 

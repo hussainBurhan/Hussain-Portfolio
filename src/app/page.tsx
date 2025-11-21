@@ -19,11 +19,11 @@ export default async function Home() {
 
       <Experience data={data.experience} />
 
+      <Skills data={data.skills} />
+
       <Achievements data={data.achievements} />
 
       <Education data={data.education} />
-
-      <Skills data={data.skills} />
 
       <Contact data={data.hero} />
 
