@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "name": "Hussain Burhanuddin",
+    "title": "Software Engineer | AI & Machine Learning Developer",
+    "location": "Islamabad, Pakistan",
+    "email": "hussainburhan.inbox@gmail.com",
+    "phone": "+92-332-2568650",
+    "linkedin": "https://linkedin.com/in/hussainburhanuddin",
+    "github": "https://github.com/hussainBurhan",
+    "summary": "Versatile Software Engineer with experience in developing AI-powered applications using React, TypeScript, FastAPI, and Django. Proficient in building intelligent agents with CrewAI and n8n, and implementing Retrieval-Augmented Generation (RAG) systems with LangChain. Skilled in training and deploying machine learning models and neural networks using scikit-learn and TensorFlow, and integrating them into scalable applications. Brings a well-rounded technical skill set across both application development and AI/ML domains.",
+    "image": "/hero-image.png"
+  },
+  "experience": [
+    {
+      "company": "Futurenostics (Service-Based Software Company)",
+      "role": "Software Engineer",
+      "startDate": "Jan 2023",
+      "endDate": "Present",
+      "location": "Remote",
+      "achievements": [],
+      "responsibilities": [
+        "Worked on multiple client-facing projects simultaneously in an agile, service-based environment.",
+        "Developed full-stack features using React, FastAPI, PostgreSQL, AWS, and OCR pipelines.",
+        "Designed microservices, optimized databases, implemented ETL workflows, and integrated 3rd-party APIs.",
+        "Collaborated cross-functionally with client engineering teams to deliver production-ready solutions."
+      ],
+      "projects": [
+        {
+          "name": "LunarScan – Security Scan & Vulnerability Analysis Platform",
+          "details": [
+            "Built dashboard (React + FastAPI) and integrated Celery workers for parallel scans.",
+            "Implemented Stripe and delivered security reports generation microservice."
+          ]
+        },
+        {
+          "name": "Diversifi – Carrier Operations Software (Shipping & Billing Automation)",
+          "details": [
+            "Developed PyTesseract OCR microservice for extracting shipment label data.",
+            "Created shipping reports automation (Playwright), FedEx/UPS/Deposco integrations.",
+            "Designed DynamoDB + PostgreSQL hybrid data architecture."
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Techbaltoro LLC",
+      "location": "Hybrid",
+      "startDate": "Dec 2024",
+      "endDate": "Present",
+      "achievements": [
+        "Built AI-driven tools using FastAPI, React, Flutter, Redux, PostgreSQL, and MongoDB.",
+        "Collaborated on data modeling, ERDs, and developing ETL pipelines for ML workflows.",
+        "Integrated ML models and intelligent agents using LangChain, OpenAI, n8n, and Redis.",
+        "Utilized Firebase, BigQuery, and GCP APIs for data pipelines and analytics.",
+        "Integrated Keepa API for supplier insights."
+      ]
+    },
+    {
+      "role": "Data Consultant",
+      "company": "Convergent Business Technologies",
+      "location": "Islamabad",
+      "startDate": "Feb 2024",
+      "endDate": "Dec 2024",
+      "achievements": [
+        "Completed a 6-month graduate training program covering SQL, Python (CS50), ML (ISLP), data warehousing, BI (Power BI), and data modeling.",
+        "Automated repetitive data validation tasks with Pandas and BigQuery.",
+        "Supported Pepsi data quality project for BI dashboards."
+      ]
+    },
+    {
+      "role": "Design Engineer",
+      "company": "Oxbridge Innovative Solutions",
+      "location": "Islamabad",
+      "startDate": "Dec 2022",
+      "endDate": "Apr 2024",
+      "achievements": [
+        "Maintained and optimized WordPress client websites.",
+        "Delivered workshops and training in Python, robotics, and automation.",
+        "Led the video production team for educational content."
+      ]
+    }
+  ],
+  "achievements": [
+    "Multi AI Agent Systems with CrewAI — DeepLearning.ai",
+    "Supervised Machine Learning: Regression & Classification — DeepLearning.ai",
+    "Convergent Graduate Academy Program — CBTech",
+    "JavaScript Algorithms & Data Structures — FreeCodeCamp",
+    "Responsive Web Design — FreeCodeCamp"
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering (Mechatronics)",
+      "institution": "Air University",
+      "location": "Islamabad",
+      "startDate": "Sep 2019",
+      "endDate": "Jun 2023"
+    }
+  ],
+  "skills": {
+    "frontend_ui": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "Tailwind CSS",
+      "Material UI",
+      "Flutter"
+    ],
+    "backend_devops": [
+      "FastAPI",
+      "Django",
+      "Python",
+      "Pydantic",
+      "SQLAlchemy",
+      "Docker",
+      "Pytest",
+      "Unittest",
+      "GRPC",
+      "Git",
+      "Railway",
+      "Vercel",
+      "AWS (S3, DynamoDB, Lambda)",
+      "GCP (BigQuery, Firebase, Sheets API, GCS)"
+    ],
+    "ai_ml": [
+      "Scikit-learn",
+      "TensorFlow",
+      "Numpy",
+      "Pandas",
+      "NLTK",
+      "LangChain",
+      "CrewAI",
+      "n8n",
+      "OpenAI",
+      "Gemini",
+      "PyTesseract OCR",
+      "OpenCV",
+      "Dialogflow"
+    ],
+    "databases_tools": [
+      "PostgreSQL",
+      "MongoDB",
+      "Pinecone",
+      "FAISS",
+      "Chroma",
+      "Milvus",
+      "Redis",
+      "Minio",
+      "Playwright",
+      "Selenium",
+      "Stripe API",
+      "FedEx API",
+      "UPS API",
+      "Deposco API",
+      "Keepa API",
+      "Nuclei",
+      "PowerBI"
+    ]
+  }
+}
