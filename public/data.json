@@ -7,65 +7,68 @@
     "phone": "+92-332-2568650",
     "linkedin": "https://linkedin.com/in/hussainburhanuddin",
     "github": "https://github.com/hussainBurhan",
-    "summary": "Versatile Software Engineer specializing in AI/ML and full-stack development. Experienced with React, TypeScript, FastAPI, Django, and building intelligent agents (CrewAI, n8n) and RAG systems (LangChain). Proficient in training and deploying ML models (scikit-learn, TensorFlow) into scalable applications.",
+    "summary": "Versatile and adaptable Software Engineer with a diverse skill set spanning AI/ML engineering, multi-agent systems, full-stack development, and cloud-native deployments. Experienced in building advanced AI systems, scalable backend architectures, and modern frontend interfaces.",
     "image": "/Hussain.png"
   },
   "experience": [
     {
-      "company": "Futurenostics (Service-Based Software Company)",
+      "company": "Futurenostics",
       "role": "Software Engineer",
-      "startDate": "Jan 2023",
+      "startDate": "Apr 2024",
       "endDate": "Present",
-      "location": "Remote",
+      "location": "Islamabad",
       "achievements": [],
       "responsibilities": [
-        "Worked on multiple client-facing projects simultaneously in an agile, service-based environment.",
-        "Developed full-stack features using React, FastAPI, PostgreSQL, AWS, and OCR pipelines.",
-        "Designed microservices, optimized databases, implemented ETL workflows, and integrated 3rd-party APIs.",
-        "Collaborated cross-functionally with client engineering teams to deliver production-ready solutions."
-      ],
-      "projects": [
-        {
-          "name": "LunarScan – Security Scan & Vulnerability Analysis Platform",
-          "details": [
-            "Built dashboard (React + FastAPI) and integrated Celery workers for parallel scans.",
-            "Implemented Stripe and delivered security reports generation microservice."
-          ]
-        },
-        {
-          "name": "Diversifi – Carrier Operations Software (Shipping & Billing Automation)",
-          "details": [
-            "Developed PyTesseract OCR microservice for extracting shipment label data.",
-            "Created shipping reports automation (Playwright), FedEx/UPS/Deposco integrations.",
-            "Designed DynamoDB + PostgreSQL hybrid data architecture."
-          ]
-        }
+        "Developed multi-AI agent systems using CrewAI and LangChain to automate complex workflows, enhance reasoning, and coordinate distributed agent tasks.",
+        "Built RAG pipelines leveraging LangChain, Pinecone, FAISS, and Milvus for high-performance semantic search and knowledge-augmented LLM applications.",
+        "Worked with leading LLMs (OpenAI, Gemini, Claude) for generative AI, conversational systems, and fine-tuned task-specific agent behavior.",
+        "Designed computer vision pipelines using OpenCV, YOLO, MTCNN, and MediaPipe Pose for player image analysis, extracting body/facial landmarks, and enabling prompt-based background generation and image editing.",
+        "Implemented OCR workflows using PyTesseract to extract structured invoice data for accounting and automation systems.",
+        "Built production-grade backend APIs with FastAPI and Django, integrated external services, and implemented Celery + Redis for asynchronous task processing; managed databases and migrations using SQLAlchemy + Alembic.",
+        "Delivered full-stack features using React, including dashboards and data visualizations with React Charts, while optimizing data pipelines, caching, and overall system performance.",
+        "Managed cloud-native deployments using AWS Lambda, EC2, Fargate, and SageMaker; containerized models with Docker; set up CI/CD with GitHub Actions; and deployed apps on Railway and Vercel.",
+        "Led the hiring, evaluation, and training of AI/ML talent, conducting interviews, building training paths, and mentoring trainees to production-level competence."
       ]
     },
     {
       "role": "Software Engineer",
-      "company": "Techbaltoro LLC",
-      "location": "Hybrid",
+      "company": "Techbaltoro (Freelancing)",
+      "location": "Remote",
       "startDate": "Dec 2024",
       "endDate": "Present",
-      "achievements": [
-        "Built AI-driven tools using FastAPI, React, Flutter, Redux, PostgreSQL, and MongoDB.",
-        "Collaborated on data modeling, ERDs, and developing ETL pipelines for ML workflows.",
-        "Integrated ML models and intelligent agents using LangChain, OpenAI, n8n, and Redis.",
-        "Utilized Firebase, BigQuery, and GCP APIs for data pipelines and analytics.",
-        "Integrated Keepa API for supplier insights."
+      "achievements": [],
+      "responsibilities": [
+        "Architected and developed internal automation tools and workflows, including pipelines for supplier feed/stock processing, while designing the company-wide database architecture and ERDs using BigQuery.",
+        "Built an AI application for e-commerce, training ML models with Scikit-Learn for Amazon product hunting and implementing explainable AI insights using SHAP.",
+        "Delivered full-stack features using React on frontend and FastAPI on backend across multiple tools, ensuring performant APIs and smooth user experiences.",
+        "Developed a Flutter + FastAPI mobile application for scanning and managing returned Amazon products, integrating barcode scanning and real-time inventory tracking.",
+        "Created a Chrome extension for FBA/FMB profit calculations, incorporating scraping, Keepa integration, and backend processing via FastAPI."
       ]
     },
     {
-      "role": "Data Consultant",
+      "role": "Certified Agentic & Robotic AI Engineer",
+      "company": "PIAIC - AI & Python Program (Training)",
+      "location": "Islamabad",
+      "startDate": "Jun 2025",
+      "endDate": "Present",
+      "achievements": [],
+      "responsibilities": [
+        "Learned Python fundamentals, OOP, asynchronous programming, including coroutines, websockets, async/await, and multithreading; successfully cleared the Python Level 1 exam.",
+        "Gained hands-on experience with the OpenAI SDK, building agents, tools, and advanced AI interaction patterns, including agent cloning and task automation.",
+        "Practiced modern AI development workflows using the Gemini CLI, creating and testing AI-powered applications through prompt engineering and code generation."
+      ]
+    },
+    {
+      "role": "Convergent Graduate Academy Program",
       "company": "Convergent Business Technologies",
       "location": "Islamabad",
       "startDate": "Feb 2024",
       "endDate": "Dec 2024",
-      "achievements": [
-        "Completed a 6-month graduate training program covering SQL, Python (CS50), ML (ISLP), data warehousing, BI (Power BI), and data modeling.",
-        "Automated repetitive data validation tasks with Pandas and BigQuery.",
-        "Supported Pepsi data quality project for BI dashboards."
+      "achievements": [],
+      "responsibilities": [
+        "Completed 6-month graduate training in SQL, Python (CS50), ML (ISLP), data warehousing, BI (Power BI), Design principles and data modelling principles.",
+        "Automated repetitive data validation tasks using Pandas, Python scripting, and BigQuery; improved reliability and speed of QA processes.",
+        "Supported Pepsi client project as part of the data quality team, ensuring clean and verified datasets for BI reports and dashboards built with Power BI."
       ]
     },
     {
@@ -74,24 +77,24 @@
       "location": "Islamabad",
       "startDate": "Dec 2022",
       "endDate": "Apr 2024",
-      "achievements": [
-        "Maintained and optimized WordPress client websites.",
-        "Delivered workshops and training in Python, robotics, and automation.",
-        "Led the video production team for educational content."
+      "achievements": [],
+      "responsibilities": [
+        "Maintained and optimized client websites built in WordPress, improved UI responsiveness and site performance.",
+        "Delivered hands-on workshops and training in Python and robotics, teaching students fundamentals of automation and IoT.",
+        "Led the video production team, overseeing educational content creation, editing workflows, and publishing schedules."
       ]
     }
   ],
   "achievements": [
-    "Multi AI Agent Systems with CrewAI — DeepLearning.ai",
-    "Supervised Machine Learning: Regression & Classification — DeepLearning.ai",
-    "Convergent Graduate Academy Program — CBTech",
-    "JavaScript Algorithms & Data Structures — FreeCodeCamp",
-    "Responsive Web Design — FreeCodeCamp"
+    "Multi AI agent systems with Crewai – DeepLearning.ai",
+    "Supervised Machine Learning: Regression and Classification – DeepLearning.ai",
+    "JavaScript Algorithms and Data Structures – FreeCodeCamp",
+    "Responsive Web Design – FreeCodeCamp"
   ],
   "education": [
     {
-      "degree": "Bachelor of Engineering (Mechatronics)",
-      "institution": "Air University",
+      "degree": "Bachelor of Engineering Mechatronics",
+      "institution": "Air University, Islamabad",
       "location": "Islamabad",
       "startDate": "Sep 2019",
       "endDate": "Jun 2023"
@@ -100,10 +103,12 @@
   "skills": {
     "frontend_ui": [
       "React",
-      "Redux",
       "TypeScript",
       "Tailwind CSS",
       "Material UI",
+      "Redux",
+      "Zustand",
+      "React Charts",
       "Flutter"
     ],
     "backend_devops": [
@@ -112,49 +117,53 @@
       "Python",
       "Pydantic",
       "SQLAlchemy",
-      "Docker",
+      "Alembic",
+      "Celery",
+      "Uvicorn",
+      "Asyncio",
+      "OAuth2 / JWT",
+      "Firebase Auth",
       "Pytest",
-      "Unittest",
-      "GRPC",
+      "Docker",
       "Git",
+      "Github Actions",
       "Railway",
       "Vercel",
-      "AWS (S3, DynamoDB, Lambda)",
-      "GCP (BigQuery, Firebase, Sheets API, GCS)"
+      "AWS (S3, DynamoDB, EC2, Fargate, Lambda, CloudWatch, Step Functions, Sagemaker)",
+      "GCP (BigQuery, Firebase, Google Sheets API)"
     ],
     "ai_ml": [
-      "Scikit-learn",
-      "TensorFlow",
-      "Numpy",
+      "Langchain",
+      "LangGraph",
+      "Crew AI",
+      "Tensorflow",
+      "PyTorch",
+      "Scikit-Learn",
+      "Hugging Face Transformers",
+      "XGBoost",
       "Pandas",
+      "Numpy",
       "NLTK",
-      "LangChain",
-      "CrewAI",
-      "n8n",
-      "OpenAI",
-      "Gemini",
-      "PyTesseract OCR",
+      "Openai SDK",
+      "MLFlow",
+      "DVC",
       "OpenCV",
-      "Dialogflow"
+      "YOLO",
+      "Pytesseract OCR",
+      "N8N",
+      "LangSmith"
     ],
     "databases_tools": [
       "PostgreSQL",
+      "MySQL",
       "MongoDB",
+      "Supabase",
+      "Minio",
+      "Redis",
       "Pinecone",
       "FAISS",
-      "Chroma",
       "Milvus",
-      "Redis",
-      "Minio",
-      "Playwright",
-      "Selenium",
-      "Stripe API",
-      "FedEx API",
-      "UPS API",
-      "Deposco API",
-      "Keepa API",
-      "Nuclei",
-      "PowerBI"
+      "Chroma"
     ]
   }
 }
