@@ -1,13 +1,13 @@
 {
   "hero": {
     "name": "Hussain Burhanuddin",
-    "title": "Software Engineer | AI & Machine Learning Developer",
+    "title": "Software Engineer | AI and Machine Learning Developer",
     "location": "Islamabad, Pakistan",
     "email": "hussainburhan.inbox@gmail.com",
     "phone": "+92-332-2568650",
     "linkedin": "https://linkedin.com/in/hussainburhanuddin",
     "github": "https://github.com/hussainBurhan",
-    "summary": "Versatile and adaptable Software Engineer with a diverse skill set spanning AI/ML engineering, multi-agent systems, full-stack development, and cloud-native deployments. Experienced in building advanced AI systems, scalable backend architectures, and modern frontend interfaces.",
+    "summary": "Versatile and adaptable Software Engineer with a diverse skill set spanning AI/ML engineering, multi-agent systems, full-stack development, and cloud-native deployments. Proven ability to thrive in fast-paced, rapidly evolving environments by quickly learning new technologies, context-switching across complex projects, and delivering production-ready solutions end-to-end. Experienced in building advanced AI systems, scalable backend architectures, and modern frontend interfaces while collaborating across teams, mentoring junior developers, and driving high-impact initiatives from concept to deployment.",
     "image": "/Hussain.png"
   },
   "experience": [
@@ -28,14 +28,15 @@
         "Delivered full-stack features using React, including dashboards and data visualizations with React Charts, while optimizing data pipelines, caching, and overall system performance.",
         "Managed cloud-native deployments using AWS Lambda, EC2, Fargate, and SageMaker; containerized models with Docker; set up CI/CD with GitHub Actions; and deployed apps on Railway and Vercel.",
         "Led the hiring, evaluation, and training of AI/ML talent, conducting interviews, building training paths, and mentoring trainees to production-level competence."
-      ]
+      ],
+      "projects": []
     },
     {
-      "role": "Software Engineer",
       "company": "Techbaltoro (Freelancing)",
-      "location": "Remote",
+      "role": "Software Engineer",
       "startDate": "Dec 2024",
       "endDate": "Present",
+      "location": "Islamabad",
       "achievements": [],
       "responsibilities": [
         "Architected and developed internal automation tools and workflows, including pipelines for supplier feed/stock processing, while designing the company-wide database architecture and ERDs using BigQuery.",
@@ -43,46 +44,50 @@
         "Delivered full-stack features using React on frontend and FastAPI on backend across multiple tools, ensuring performant APIs and smooth user experiences.",
         "Developed a Flutter + FastAPI mobile application for scanning and managing returned Amazon products, integrating barcode scanning and real-time inventory tracking.",
         "Created a Chrome extension for FBA/FMB profit calculations, incorporating scraping, Keepa integration, and backend processing via FastAPI."
-      ]
+      ],
+      "projects": []
     },
     {
-      "role": "Certified Agentic & Robotic AI Engineer",
-      "company": "PIAIC - AI & Python Program (Training)",
-      "location": "Islamabad",
-      "startDate": "Jun 2025",
-      "endDate": "Present",
-      "achievements": [],
-      "responsibilities": [
-        "Learned Python fundamentals, OOP, asynchronous programming, including coroutines, websockets, async/await, and multithreading; successfully cleared the Python Level 1 exam.",
-        "Gained hands-on experience with the OpenAI SDK, building agents, tools, and advanced AI interaction patterns, including agent cloning and task automation.",
-        "Practiced modern AI development workflows using the Gemini CLI, creating and testing AI-powered applications through prompt engineering and code generation."
-      ]
-    },
-    {
-      "role": "Convergent Graduate Academy Program",
-      "company": "Convergent Business Technologies",
-      "location": "Islamabad",
-      "startDate": "Feb 2024",
-      "endDate": "Dec 2024",
-      "achievements": [],
-      "responsibilities": [
-        "Completed 6-month graduate training in SQL, Python (CS50), ML (ISLP), data warehousing, BI (Power BI), Design principles and data modelling principles.",
-        "Automated repetitive data validation tasks using Pandas, Python scripting, and BigQuery; improved reliability and speed of QA processes.",
-        "Supported Pepsi client project as part of the data quality team, ensuring clean and verified datasets for BI reports and dashboards built with Power BI."
-      ]
-    },
-    {
-      "role": "Design Engineer",
       "company": "Oxbridge Innovative Solutions",
-      "location": "Islamabad",
+      "role": "Design Engineer",
       "startDate": "Dec 2022",
       "endDate": "Apr 2024",
+      "location": "Islamabad",
       "achievements": [],
       "responsibilities": [
         "Maintained and optimized client websites built in WordPress, improved UI responsiveness and site performance.",
         "Delivered hands-on workshops and training in Python and robotics, teaching students fundamentals of automation and IoT.",
         "Led the video production team, overseeing educational content creation, editing workflows, and publishing schedules."
-      ]
+      ],
+      "projects": []
+    },
+    {
+      "company": "Convergent Business Technologies (Training Leading to Job)",
+      "role": "Convergent Graduate Academy Program",
+      "startDate": "Feb 2024",
+      "endDate": "Dec 2024",
+      "location": "Islamabad",
+      "achievements": [],
+      "responsibilities": [
+        "Completed 6-month graduate training in SQL, Python (CS50), ML (ISLP), data warehousing, BI (Power BI), Design principles and data modelling principles.",
+        "Automated repetitive data validation tasks using Pandas, Python scripting, and BigQuery; improved reliability and speed of QA processes.",
+        "Supported Pepsi client project as part of the data quality team, ensuring clean and verified datasets for BI reports and dashboards built with Power BI."
+      ],
+      "projects": []
+    },
+    {
+      "company": "PIAIC - AI & Python Program (Training)",
+      "role": "Certified Agentic & Robotic AI Engineer",
+      "startDate": "Jun 2025",
+      "endDate": "Present",
+      "location": "Islamabad",
+      "achievements": [],
+      "responsibilities": [
+        "Learned Python fundamentals, OOP, asynchronous programming, including coroutines, websockets, async/await, and multithreading; successfully cleared the Python Level 1 exam.",
+        "Gained hands-on experience with the OpenAI SDK, building agents, tools, and advanced AI interaction patterns, including agent cloning and task automation.",
+        "Practiced modern AI development workflows using the Gemini CLI, creating and testing AI-powered applications through prompt engineering and code generation."
+      ],
+      "projects": []
     }
   ],
   "achievements": [
@@ -102,19 +107,19 @@
   ],
   "skills": {
     "frontend_ui": [
-      "React",
+      "JavaScript",
       "TypeScript",
+      "React",
       "Tailwind CSS",
       "Material UI",
       "Redux",
       "Zustand",
-      "React Charts",
-      "Flutter"
+      "React Charts"
     ],
     "backend_devops": [
+      "Python",
       "FastAPI",
       "Django",
-      "Python",
       "Pydantic",
       "SQLAlchemy",
       "Alembic",
